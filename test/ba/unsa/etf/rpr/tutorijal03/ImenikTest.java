@@ -17,7 +17,7 @@ class ImenikTest {
         imenik.dodaj("Meho Mehic", new FiksniBroj(SARAJEVO, "123-456"));
         assertEquals("033/123-456", imenik.dajBroj("Meho Mehic"));
     }
-
+/*
     @Test
     void naSlovo() {
         Imenik imenik = new Imenik();
@@ -60,4 +60,5 @@ class ImenikTest {
         }
         assertEquals("033/123-156,033/123-456,033/123-656,", result);
     }
+    */
 }
