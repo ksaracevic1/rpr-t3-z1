@@ -1,6 +1,6 @@
 package ba.unsa.etf.rpr.tutorijal03;
 
-public class FiksniBroj extends TelefonskiBroj {
+public class FiksniBroj extends TelefonskiBroj  {
 
     Grad grad;
     String broj;
@@ -19,6 +19,8 @@ public class FiksniBroj extends TelefonskiBroj {
 
         return 1;
     }
+
+
 
 
 }
