@@ -35,14 +35,13 @@ String naSlovo (char s) {
             i++;
         }
     }
-    return spisak.toString();
+    return spisak;
 }
 
 Set<String> izGrada (Grad g) {
     Set<String> s =  new TreeSet<String>();
     for (String o : hm.keySet()) {
-        if (hm.get(o) instanceof FiksniBroj) {
-            if (((FiksniBroj) hm.get(o)).grad == g)
+        if (hm.get(o) instanceof FiksniBroj && ((FiksniBroj) hm.get(o)).grad == g) {
                 s.add(o);
         }
 
@@ -53,10 +52,9 @@ Set<String> izGrada (Grad g) {
 Set<TelefonskiBroj> izGradaBrojevi (Grad g) {
     Set<TelefonskiBroj> s =  new TreeSet<TelefonskiBroj>();
     for (String o : hm.keySet()) {
-        if (hm.get(o) instanceof FiksniBroj) {
-            if (((FiksniBroj) hm.get(o)).grad == g)
-                s.add(hm.get(o));
-        }
+        if (hm.get(o) instanceof FiksniBroj && ((FiksniBroj) hm.get(o)).grad == g)
+            s.add(hm.get(o));
+
 
     }
     return s;

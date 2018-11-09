@@ -13,7 +13,7 @@ public class FiksniBroj extends TelefonskiBroj  {
             if (grad==Grad.values()[i])
                 pomocni=niz[i];
         pomocni+= "/" + broj;
-        return pomocni.toString();
+        return pomocni;
     }
     public int hashCode() {
 
